@@ -16,17 +16,17 @@ public class CorsConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOriginPatterns(Arrays.asList("https://dhanusiyas.github.io/FullStackQuizQuarryFrontend/"));
+        configuration.setAllowedOriginPatterns(Arrays.asList(
+                "https://dhanusiyas.github.io"
+        ));
 
         configuration.setAllowedMethods(Arrays.asList(
-
                 "GET",
                 "POST",
                 "PUT",
                 "DELETE",
                 "PATCH",
                 "OPTIONS"
-
         ));
 
         configuration.setAllowedHeaders(Arrays.asList("*"));
@@ -34,11 +34,8 @@ public class CorsConfig {
         configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-
         source.registerCorsConfiguration("/**", configuration);
 
         return source;
-
     }
-
 }
