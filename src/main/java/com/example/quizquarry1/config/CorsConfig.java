@@ -16,9 +16,7 @@ public class CorsConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOriginPatterns(Arrays.asList(
-                "*"
-        ));
+        configuration.setAllowedOriginPatterns(Arrays.asList("https://dhanusiyas.github.io/FullStackQuizQuarryFrontend/"));
 
         configuration.setAllowedMethods(Arrays.asList(
 
@@ -32,8 +30,6 @@ public class CorsConfig {
         ));
 
         configuration.setAllowedHeaders(Arrays.asList("*"));
-
-        configuration.setAllowedOriginPatterns(Arrays.asList("https://dhanusiyas.github.io/FullStackQuizQuarryFrontend/"));
 
         configuration.setAllowCredentials(true);
 
